@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import axios from 'axios'
+import React, {useEffect, useState} from 'react'
 import './App.css';
 
 function App() {
+  const [art, setArt] = useState([{
+                                "artName": "",
+                                "artist": "",
+                                "id": "",
+                                "price": "",
+                                "year": ""
+  }])
+
+  const getArt = () => {
+    axios
+      .get('http://localhost:5245/api/art')
+      .then 
+      (response => setArt(response.data))
+      console.log(art );
+
+  }
+
+  useEffect(()=> {
+    getArt()
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {art.map((artPiece) => {
+          return(
+            <div key={artPiece.id}>
+              {artPiece.artName} by
+              {artPiece.artist}
+            </div>
+          )
+        })
+      }
+      hewwo
     </div>
   );
 }
