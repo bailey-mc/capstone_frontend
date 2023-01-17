@@ -20,6 +20,11 @@ function Art() {
 
   }
 
+  const handleDelete = () => {
+    axios
+        .delete('http://localhost:5245/api/art/63c72335b35978421d394c6f')
+  }
+
 useEffect(()=> {
 getArt()
 }, [])
@@ -30,6 +35,7 @@ getArt()
           return(
             <div key={artPiece.id}>
               <p>{artPiece.artName} by {artPiece.artist}</p>
+              <button onClick={handleDelete}> delete</button>
             </div>
           )
         })
