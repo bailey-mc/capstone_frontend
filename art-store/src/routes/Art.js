@@ -38,9 +38,8 @@ getArt()
                 <Card.Body>
                   <Card.Title>{artPiece.artName}</Card.Title>
                   <Card.Text>
-                  {artPiece.artName} by {artPiece.artist} <br/>
-                  {artPiece.year} <br/>
-                  ${artPiece.price}
+                  <p>by {artPiece.artist}, {artPiece.year} </p>
+                  $ {artPiece.price}<br/>
                   Part of our {artPiece.collection} collection
                   </Card.Text>
                   <Button variant="primary" href={`./editArt/${artPiece.id}`}>Edit</Button>
