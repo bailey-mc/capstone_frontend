@@ -1,38 +1,31 @@
-.App {
+.App { 
+  background: url("https://media.npr.org/assets/news/2010/07/23/ronan_custom-fc9afd0b711c4f73b6379b9847248bff2fbdb837.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  color: rgb(255, 255, 255);
+  /* background-image: linear-gradient(to right, #190a05, #870000); */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.links {
+  font-family: 'Archivo Black', sans-serif;
+  list-style-type: none;
+  color:rgb(255, 255, 255);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links li {
+  display: inline-block;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: white
 }
