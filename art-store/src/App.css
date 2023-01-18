@@ -38,3 +38,11 @@ a {
   width: 80%;
   align-content: center;
 }
+
+.form {
+  max-width: 50%;
+  margin: 0 auto;
+  font-family: 'Archivo Black', sans-serif;
+  color:rgb(255, 255, 255);
+  
+}

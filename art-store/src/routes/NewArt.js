@@ -56,11 +56,12 @@ function NewArt() {
     return(
         <>
             <Form 
+            className="form"
             onSubmit={handleNewArt}
             >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Art Title</Form.Label>
-                    <Form.Control type="text" name="artName" placeholder="Title" max-width="100px" onChange={handleChange} />
+                    <Form.Control type="text" name="artName" placeholder="Title" max-width="40%"  onChange={handleChange} />
                 </Form.Group>
                 {/* <input type="text" name="artName" placeholder="Title" max-width="100px" onChange={handleChange}/> */}
 
