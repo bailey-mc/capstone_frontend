@@ -8,7 +8,9 @@ function NewArt() {
                                     artName: "",
                                     artist: "",
                                     price: "",
-                                    year: ""
+                                    year: "",
+                                    image: "",
+                                    collection: "",
                                 })
     //test
     // const [name, setName] = useState("")
@@ -38,7 +40,9 @@ function NewArt() {
                 artName: newArt.artName,
                 artist: newArt.artist,
                 price: newArt.price,
-                year: newArt.year
+                year: newArt.year,
+                image: newArt.image,
+                collection: newArt.collection
                 // artName: "art name",
                 // artist: "artist",
                 // price: "45",
@@ -71,6 +75,14 @@ function NewArt() {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
                     <Form.Control type="number" name="price" placeholder="Price" max-width="100px" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Image</Form.Label>
+                    <Form.Control type="string" name="image" placeholder="Image" max-width="100px" onChange={handleChange} />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Collection</Form.Label>
+                    <Form.Control type="string" name="collection" placeholder="Collection" max-width="100px" onChange={handleChange} />
                 </Form.Group>
                 <Button variant="primary" 
                 type="submit"
