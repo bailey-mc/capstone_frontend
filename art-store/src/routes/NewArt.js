@@ -1,9 +1,13 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function NewArt() {
+
+    const navigate = useNavigate();
+
     const [newArt, setNewArt] = useState({
                                     artName: "",
                                     artist: "",
@@ -50,6 +54,8 @@ function NewArt() {
             })
             .then(response => console.log(response))
             .catch(err => console.log(err))
+            navigate(`/art`)
+
     }
    
 
