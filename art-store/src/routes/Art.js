@@ -12,18 +12,14 @@ function Art() {
                                     }])
 
   const getArt = () => {
-  axios
-  .get('http://localhost:5245/api/art')
-  .then 
-  (response => setArt(response.data))
-  console.log(art );
-
-  }
-
-  const handleDelete = () => {
     axios
-        .delete('http://localhost:5245/api/art/63c72335b35978421d394c6f')
+      .get('http://localhost:5245/api/art')
+      .then 
+      (response => setArt(response.data))
+      console.log(art );
   }
+
+ 
 
 useEffect(()=> {
 getArt()
@@ -36,7 +32,6 @@ getArt()
             <div key={artPiece.id}>
               <p>{artPiece.artName} by {artPiece.artist}</p>
               <a href={`./editArt/${artPiece.id}`}>edit</a>
-              <button onClick={handleDelete}> delete</button>
             </div>
           )
         })
