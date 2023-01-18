@@ -7,7 +7,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
+import Collections from './routes/Collections'
 import Root from './routes/Root'
 import ErrorPage from './routes/Error-page';
 import Art from './routes/Art'
@@ -32,6 +32,7 @@ function App() {
           <Route path="/art" element={<Art/>}/>
           <Route path="/newArt" element={<NewArt/>}/>
           <Route path="/editArt/:id" element={<EditArt/>}/>
+          <Route path="/collections" element={<Collections/>}/>
         </Route>
       </Routes>
     </Router>

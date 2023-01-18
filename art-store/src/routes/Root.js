@@ -16,6 +16,8 @@ function Root() {
           <li><Link to={'art'} style={linkstyle}>All Art </Link></li>
           <li> | </li>
           <li><Link to={'newart'} style={linkstyle}> New Art</Link></li>
+          <li> | </li>
+          <li><Link to={'collections'} style={linkstyle}> Browse Collections</Link></li>
         </ul>
       </section>
       

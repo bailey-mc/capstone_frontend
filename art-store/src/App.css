@@ -1,4 +1,4 @@
-.App { 
+body { 
   background: url("https://media.npr.org/assets/news/2010/07/23/ronan_custom-fc9afd0b711c4f73b6379b9847248bff2fbdb837.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -28,4 +28,13 @@
 }
 a {
   color: white
+}
+
+.cards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  align-content: center;
 }
