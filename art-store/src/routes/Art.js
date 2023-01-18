@@ -35,6 +35,7 @@ getArt()
           return(
             <div key={artPiece.id}>
               <p>{artPiece.artName} by {artPiece.artist}</p>
+              <a href={`./editArt/${artPiece.id}`}>edit</a>
               <button onClick={handleDelete}> delete</button>
             </div>
           )
