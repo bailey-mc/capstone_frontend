@@ -84,7 +84,12 @@ function NewArt() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Collection</Form.Label>
-                    <Form.Control type="string" name="collection" placeholder="Collection" max-width="100px" onChange={handleChange} />
+                    <Form.Select type="string" name="collection" placeholder="Collection" max-width="100px" onChange={handleChange}>
+                        <option>Awful Animals</option>
+                        <option>Poor Traits</option>
+                        <option>Bad Views</option>
+                        <option>Abstract Aneurysms</option>
+                    </Form.Select>
                 </Form.Group>
                 <Button variant="primary" 
                 type="submit"
