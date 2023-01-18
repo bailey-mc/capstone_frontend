@@ -40,9 +40,22 @@ a {
 }
 
 .form {
-  max-width: 50%;
+  max-width: 40%;
   margin: 0 auto;
   font-family: 'Archivo Black', sans-serif;
   color:rgb(255, 255, 255);
-  
+}
+
+.frame {
+  background-image: url('../public/pngwing.com.png');
+  background-size: 45rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 50rem;
+  margin-top: -30px;
+
+}
+
+.filler{
+  height: 10rem;;
 }

@@ -54,7 +54,8 @@ function NewArt() {
    
 
     return(
-        <>
+        <div className="frame">
+            <div className="filler"></div>
             <Form 
             className="form"
             onSubmit={handleNewArt}
@@ -92,7 +93,7 @@ function NewArt() {
                     Submit
                 </Button>
                 </Form>
-        </>
+        </div>
     )
 }
 
