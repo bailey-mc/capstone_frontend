@@ -18,18 +18,10 @@ function ShowCollections () {
           }])
     
 
-    let carouselNumber = 0
 
     const thisCollection = art.filter(artt => (artt.collection === collectionName));
     console.log(thisCollection + ' this collection');
 
-    // const setCarouselNumber = () => {
-    //     if (carouselNumber < (thisCollection.length - 1)) {
-    //         carouselNumber += 1;
-    //     } else {
-    //         carouselNumber = 0
-    //     }
-    // }
 
     const getArt = () => {
         axios
@@ -50,10 +42,11 @@ function ShowCollections () {
             {thisCollection.map((collection)=> {
                 return(
                     <Carousel.Item>
-                        <img className="d-block w-100" src={collection.image} alt={collection.name}/>
+                        <img className="d-block w-100 carousel-img" src={collection.image} alt={collection.name}/>
                         <Carousel.Caption>
                             {collection.artName} by {collection.artist} <br/>
-                            {collection.year}
+                            {collection.year} <br/>
+                            ${collection.price}
                         </Carousel.Caption>
                     </Carousel.Item>
                 )

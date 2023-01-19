@@ -70,8 +70,6 @@ function NewArt() {
                     <Form.Label>Art Title</Form.Label>
                     <Form.Control type="text" name="artName" placeholder="Title" max-width="40%"  onChange={handleChange} />
                 </Form.Group>
-                {/* <input type="text" name="artName" placeholder="Title" max-width="100px" onChange={handleChange}/> */}
-
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Artist</Form.Label>
                     <Form.Control type="text" name="artist" placeholder="Artist" max-width="100px" onChange={handleChange} />
@@ -91,6 +89,7 @@ function NewArt() {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Collection</Form.Label>
                     <Form.Select type="string" name="collection" placeholder="Collection" max-width="100px" onChange={handleChange}>
+                        <option selected disabled hidden>Select a Collection</option>
                         <option>Awful Animals</option>
                         <option>Poor Traits</option>
                         <option>Bad Views</option>

@@ -35,14 +35,17 @@ getArt()
       <img src={art[x].image} /><br/>
       <h4>Part of our {art[x].collection} collection</h4>
       {/* link to collection here */}
-      
-
+      <hr/>
+    
 
       <div className='cards'>
         {art.map((artPiece) => {
             return(
-                <>
-              <Card style={{ width: '18rem', margin: '2rem'}} key={artPiece.id}>
+                <div className="one-card">
+                <img className="cards-img" src={artPiece.image}/><br/>
+                <p><a>{artPiece.artName}</a></p>
+
+              {/* <Card style={{ width: '18rem', margin: '2rem'}} key={artPiece.id}>
                 <Card.Img variant="top" src={artPiece.image} />
                 <Card.Body>
                   <Card.Title>{artPiece.artName}</Card.Title>
@@ -53,8 +56,8 @@ getArt()
                   </Card.Text>
                   <Button variant="primary" href={`./editArt/${artPiece.id}`}>Edit</Button>
                 </Card.Body>
-              </Card>
-              </>
+              </Card> */}
+              </div>
             )
           })
         }

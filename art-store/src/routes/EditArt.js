@@ -63,37 +63,46 @@ function EditArt() {
     }, [])
 
     return(
-        <>
+        <div className="frame">
+            <div className="filler"></div>
         
-        <Form 
-            onSubmit={handleEditArt}
-            >
+        <Form
+        className="form" 
+        onSubmit={handleEditArt}
+        >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Art Title</Form.Label>
-                    <Form.Control type="text" name="artName" defaultValue={art.artName} max-width="100px" onChange={handleChange} />
+                    <Form.Control type="text" name="artName" defaultValue={art.artName} onChange={handleChange} />
                 </Form.Group>
                 {/* <input type="text" name="artName" defaultValue={art.}Title" max-width="100px" onChange={handleChange}/> */}
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Artist</Form.Label>
-                    <Form.Control type="text" name="artist" defaultValue={art.artist} max-width="100px" onChange={handleChange} />
+                    <Form.Control type="text" name="artist" defaultValue={art.artist} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Year</Form.Label>
-                    <Form.Control type="text" name="year" defaultValue={art.year} max-width="100px" onChange={handleChange} />
+                    <Form.Control type="text" name="year" defaultValue={art.year} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
-                    <Form.Control type="number" name="price" defaultValue={art.price} max-width="100px" onChange={handleChange} />
+                    <Form.Control type="number" name="price" defaultValue={art.price} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Image</Form.Label>
-                    <Form.Control type="string" name="image" defaultValue={art.image} max-width="100px" onChange={handleChange} />
+                    <Form.Control type="string" name="image" defaultValue={art.image} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Collection</Form.Label>
-                    <Form.Control type="string" name="collection" defaultValue={art.collection} max-width="100px" onChange={handleChange} />
+                    <Form.Select type="string" name="collection" placeholder="Collection" max-width="100px" onChange={handleChange}>
+                        <option selected disabled hidden>Select a Collection</option>
+                        <option>Awful Animals</option>
+                        <option>Poor Traits</option>
+                        <option>Bad Views</option>
+                        <option>Abstract Aneurysms</option>
+                    </Form.Select>
                 </Form.Group>
+
                 <Button variant="primary" 
                 type="submit"
                 >
@@ -103,7 +112,7 @@ function EditArt() {
 
         <button onClick={handleDelete}>Delete</button>
 
-        </>
+        </div>
     )
 }
 

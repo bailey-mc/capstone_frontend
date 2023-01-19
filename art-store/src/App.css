@@ -42,12 +42,22 @@ body {
 
 }
 .cards {
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
-  align-content: center;
+  width: 90%;
+  align-items: center;
+}
+
+.one-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.cards-img {
+  max-width: 300px;
 }
 
 .custom-link {
@@ -98,6 +108,8 @@ body {
 
 
 
+
+
 /*-------------END COLLECTIONS------------- */
 
 /* --------------SHOW COLLECTIONS----------- */
@@ -110,9 +122,14 @@ body {
 }
 
 .collection-title {
-  text-decoration: underline;
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 4.5rem;
+  padding-top: 2rem;
 }
 .carousel {
   width: 70%;
   margin: 1rem auto;
 }
+
+
+
