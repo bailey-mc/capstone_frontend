@@ -42,13 +42,15 @@ function EditArt() {
                 image: art.image,
                 collection: art.collection
             })
-            navigate(`/art`)
+            //WHY DOES IT NOT RELOAD WHEN IT NAVIGATES TO ART SHOW PAGE???
+            navigate(`/art/${parameters.id}`)
     }
 
     const handleDelete = () => {
         axios
             .delete(`http://localhost:5245/api/art/${parameters.id}`)
         navigate('/art')
+        //THIS ALSO DOES NOT RELOAD PAGE WHEN IT NAVIGATES TO ART
 
       }
     
