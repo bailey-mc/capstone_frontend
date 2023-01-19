@@ -6,11 +6,12 @@ import Card from 'react-bootstrap/Card';
 function Art() {
 
   const [art, setArt] = useState([{
-                          "artName": "",
-                          "artist": "",
-                          "id": "",
-                          "price": "",
-                          "year": ""
+                                  artName: "",
+                                  artist: "",
+                                  price: "",
+                                  year: "",
+                                  image: "",
+                                  collection: "",
                                     }])
 
   const getArt = () => {

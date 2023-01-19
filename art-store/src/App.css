@@ -6,8 +6,10 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  
 }
 
+/* -------------ROOT ---------------------- */
 
 .header {
   padding-top: 2rem;
@@ -39,6 +41,11 @@ a {
   align-content: center;
 }
 
+/* -------------END ROOT ------------------- */
+
+
+/* ------------NEW ART PAGE ----------- */
+
 .form {
   max-width: 380px;
   margin: 0 auto;
@@ -59,3 +66,25 @@ a {
 .filler{
   height: 10rem;;
 }
+
+/* ----------END NEW ART ---------- */
+
+/*-------------COLLECTIONS------------- */
+
+.collections {
+  font-family: 'Archivo Black', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+  color: white;
+}
+
+.collection-card {
+  margin: 0 3rem 3rem 3rem;
+  text-decoration: underline;
+}
+
+/*-------------END COLLECTIONS------------- */
