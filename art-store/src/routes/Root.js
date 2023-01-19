@@ -13,7 +13,7 @@ function Root() {
         <h1>Welcome to Art Gallery</h1>
         <h3>checkout our pieces</h3>
         <ul className="links">
-          <li><Link to={'art'} style={linkstyle}>All Art </Link></li>
+          <li><Link to={'art'} style={linkstyle}>Featured Art </Link></li>
           <li> | </li>
           <li><Link to={'newart'} style={linkstyle}> New Art</Link></li>
           <li> | </li>

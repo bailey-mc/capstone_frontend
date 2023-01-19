@@ -22,14 +22,22 @@ function Art() {
       console.log(art );
   }
 
- 
+ let x = Math.floor(Math.random() * (art.length -1))
 
 useEffect(()=> {
 getArt()
 }, [])
 
     return(
-    <div className="App">
+    <div className="App featured">
+      <h2>Featured Art</h2><br/>
+      <h4>{art[x].artName} by {art[x].artist}</h4>
+      <img src={art[x].image} /><br/>
+      <h4>Part ouf our {art[x].collection} collection</h4>
+      {/* link to collection here */}
+      
+
+
       <div className='cards'>
         {art.map((artPiece) => {
             return(

@@ -64,7 +64,7 @@ function EditArt() {
 
     return(
         <>
-        hewoooo
+        
         <Form 
             onSubmit={handleEditArt}
             >

@@ -31,7 +31,17 @@ body {
 a {
   color: white
 }
+.featured {
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 
+}
 .cards {
   margin: 0 auto;
   display: flex;
