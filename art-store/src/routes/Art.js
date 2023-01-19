@@ -33,7 +33,7 @@ getArt()
       <h2>Featured Art</h2><br/>
       <h4>{art[x].artName} by {art[x].artist}</h4>
       <img src={art[x].image} /><br/>
-      <h4>Part ouf our {art[x].collection} collection</h4>
+      <h4>Part of our {art[x].collection} collection</h4>
       {/* link to collection here */}
       
 

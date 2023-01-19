@@ -9,32 +9,30 @@ body {
   
 }
 
+.App {
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
 /* -------------ROOT ---------------------- */
 
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
-  color: rgb(255, 255, 255);
   background-color: rgba(169, 171, 174, 0.158);
 
 }
 .links {
-  font-family: 'Archivo Black', sans-serif;
   list-style-type: none;
-  color:rgb(255, 255, 255);
 }
 .links li {
   display: inline-block;
   padding: 10px;
 }
-a {
-  color: white
-}
+
 .featured {
-  color: white;
-  font-family: 'Archivo Black', sans-serif;
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -52,6 +50,10 @@ a {
   align-content: center;
 }
 
+.custom-link {
+  color: white;
+}
+
 /* -------------END ROOT ------------------- */
 
 
@@ -60,8 +62,6 @@ a {
 .form {
   max-width: 380px;
   margin: 0 auto;
-  font-family: 'Archivo Black', sans-serif;
-  color:rgb(255, 255, 255);
 }
 
 .frame {
@@ -83,14 +83,12 @@ a {
 /*-------------COLLECTIONS------------- */
 
 .collections {
-  font-family: 'Archivo Black', sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
   margin: 0 auto;
   width: 70%;
-  color: white;
 }
 
 .collection-card {
@@ -98,15 +96,23 @@ a {
   text-decoration: underline;
 }
 
+
+
 /*-------------END COLLECTIONS------------- */
 
 /* --------------SHOW COLLECTIONS----------- */
 .show-collections {
-  font-family: 'Archivo Black', sans-serif;
-  color: white;
   text-align: center;
   background-color: rgba(169, 171, 174, 0.5);
   width: 80%;
   margin: 2rem auto;
-  height: 70vh;
+  height: 80%;
+}
+
+.collection-title {
+  text-decoration: underline;
+}
+.carousel {
+  width: 70%;
+  margin: 1rem auto;
 }

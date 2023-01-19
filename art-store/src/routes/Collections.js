@@ -12,6 +12,7 @@ function Collections () {
         year: "",
         image: "",
         collection: "",
+        id: ""
           }])
     
 
@@ -36,8 +37,8 @@ function Collections () {
 
           {uniqueCollections.map((collection)=> {
             return(
-                <div className="collection-card">
-                    <h3><Link to={collection.collection}>{collection.collection}</Link></h3> <br/>
+                <div className="collection-card" key={collection.id}>
+                    <h3><Link to={collection.collection} className="custom-link">{collection.collection}</Link></h3> <br/>
                     <img src={collection.image} width="200px"/>
                 </div>
             )
