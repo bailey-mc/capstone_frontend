@@ -113,7 +113,7 @@ body {
 /*-------------END COLLECTIONS------------- */
 
 /* --------------SHOW COLLECTIONS----------- */
-.show-collections {
+.show-collections, .show-art {
   text-align: center;
   background-color: rgba(169, 171, 174, 0.5);
   width: 80%;
@@ -121,7 +121,7 @@ body {
   height: 80%;
 }
 
-.collection-title {
+.collection-title, .art-title {
   font-family: 'UnifrakturMaguntia', cursive;
   font-size: 4.5rem;
   padding-top: 2rem;
@@ -131,5 +131,17 @@ body {
   margin: 1rem auto;
 }
 
+/* --------------END SHOW COLLECTIONS----------- */
 
+/* --------------SHOW ART----------- */
+.show-art{
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 2rem;
+
+}
+
+.right{
+  margin-left: 85%;
+}
+/* --------------END SHOW ART----------- */
 
