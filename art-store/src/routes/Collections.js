@@ -45,14 +45,13 @@ function Collections () {
 
     return (
         <div className="collections">
-        
-          and now for unique collections map <br/>
+
           {uniqueCollections.map((collection)=> {
             return(
-                <>
-                    {collection.collection} <br/>
+                <div className="collection-card">
+                    <h3>{collection.collection}</h3> <br/>
                     <img src={collection.image} width="200px"/>
-                </>
+                </div>
             )
           })}
         
