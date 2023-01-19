@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -12,6 +13,7 @@ function Art() {
                                   year: "",
                                   image: "",
                                   collection: "",
+                                  id: ""
                                     }])
 
   const getArt = () => {
@@ -33,7 +35,7 @@ getArt()
       <h2>Featured Art</h2><br/>
       <h4>{art[x].artName} by {art[x].artist}</h4>
       <img src={art[x].image} /><br/>
-      <h4>Part of our {art[x].collection} collection</h4>
+      <h4>Part of our <Link to={`/collections/${art[x].collection}`} className="custom-link" >{art[x].collection} collection</Link></h4>
       {/* link to collection here */}
       <hr/>
     
@@ -43,20 +45,9 @@ getArt()
             return(
                 <div className="one-card">
                 <img className="cards-img" src={artPiece.image}/><br/>
-                <p><a>{artPiece.artName}</a></p>
+                <p><Link to={artPiece.id}className="custom-link">{artPiece.artName} </Link></p>
 
-              {/* <Card style={{ width: '18rem', margin: '2rem'}} key={artPiece.id}>
-                <Card.Img variant="top" src={artPiece.image} />
-                <Card.Body>
-                  <Card.Title>{artPiece.artName}</Card.Title>
-                  <Card.Text>
-                  <p>by {artPiece.artist}, {artPiece.year} </p>
-                  $ {artPiece.price}<br/>
-                  Part of our {artPiece.collection} collection
-                  </Card.Text>
-                  <Button variant="primary" href={`./editArt/${artPiece.id}`}>Edit</Button>
-                </Card.Body>
-              </Card> */}
+         
               </div>
             )
           })
