@@ -6,7 +6,7 @@ BrowserRouter as Router, Route, Routes
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import ShowCollections from './routes/ShowCollections'
 import Collections from './routes/Collections'
 import Root from './routes/Root'
 import ErrorPage from './routes/Error-page';
@@ -33,6 +33,8 @@ function App() {
           <Route path="/newArt" element={<NewArt/>}/>
           <Route path="/editArt/:id" element={<EditArt/>}/>
           <Route path="/collections" element={<Collections/>}/>
+            <Route path="/collections/:collectionName" element={<ShowCollections/>}/>
+          {/* </Route> */}
         </Route>
       </Routes>
     </Router>

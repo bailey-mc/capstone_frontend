@@ -17,7 +17,8 @@ body {
   text-align: center;
   font-family: 'Archivo Black', sans-serif;
   color: rgb(255, 255, 255);
-  /* background-image: linear-gradient(to right, #190a05, #870000); */
+  background-color: rgba(169, 171, 174, 0.158);
+
 }
 .links {
   font-family: 'Archivo Black', sans-serif;
@@ -98,3 +99,14 @@ a {
 }
 
 /*-------------END COLLECTIONS------------- */
+
+/* --------------SHOW COLLECTIONS----------- */
+.show-collections {
+  font-family: 'Archivo Black', sans-serif;
+  color: white;
+  text-align: center;
+  background-color: rgba(169, 171, 174, 0.5);
+  width: 80%;
+  margin: 2rem auto;
+  height: 70vh;
+}

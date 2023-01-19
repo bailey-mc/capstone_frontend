@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 import axios from "axios";
 
 function Collections () {
@@ -14,17 +15,6 @@ function Collections () {
           }])
     
 
-
-
-
-    // const setCollections = () => {
-    //     for (let i = 0; i < art.length; i++) {
-    //         collections.push({"name": art[i].collection})
-    //     }
-    // }
-
-    // let collections = [{}];
-
     const uniqueCollections = [...new Map(art.map(item => [item.collection, item])).values()]
    
     
@@ -35,8 +25,6 @@ function Collections () {
         .then 
         (response => setArt(response.data))
         
-        // setCollections();
-
     }
 
     useEffect(()=> {
@@ -49,7 +37,7 @@ function Collections () {
           {uniqueCollections.map((collection)=> {
             return(
                 <div className="collection-card">
-                    <h3>{collection.collection}</h3> <br/>
+                    <h3><Link to={collection.collection}>{collection.collection}</Link></h3> <br/>
                     <img src={collection.image} width="200px"/>
                 </div>
             )
