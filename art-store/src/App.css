@@ -108,8 +108,6 @@ body {
 
 
 
-
-
 /*-------------END COLLECTIONS------------- */
 
 /* --------------SHOW COLLECTIONS----------- */
@@ -137,7 +135,10 @@ body {
 .show-art{
   font-family: 'UnifrakturMaguntia', cursive;
   font-size: 2rem;
+}
 
+.show-art-img{
+  width: 100%;
 }
 
 .right{
@@ -145,3 +146,24 @@ body {
 }
 /* --------------END SHOW ART----------- */
 
+
+/* --------------EDIT ART----------- */
+.delete {
+  margin-left: 2rem;
+}
+/* --------------END EDIT ART----------- */
+
+/* ------------------ABOUT US ---------- */
+.about {
+  text-align: center;
+  background-color: rgba(169, 171, 174, 0.5);
+  width: 80%;
+  margin: 2rem auto;
+  height: 60vh;
+  padding: 1rem;
+}
+
+.left-align{
+  text-align: left;
+}
+/* --------------END ABOUT US ---------- */

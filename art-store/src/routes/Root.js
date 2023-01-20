@@ -15,6 +15,8 @@ function Root() {
           <li><Link to={'newart'} className="custom-link"> New Art</Link></li>
           <li> | </li>
           <li><Link to={'collections'} className="custom-link"> Browse Collections</Link></li>
+          <li> | </li>
+          <li><Link to={`about`} className="custom-link">About Us</Link></li>
         </ul>
       </section>
       

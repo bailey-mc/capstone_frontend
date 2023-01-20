@@ -14,7 +14,7 @@ import ErrorPage from './routes/Error-page';
 import Art from './routes/Art'
 import NewArt from './routes/NewArt'
 import EditArt from './routes/EditArt'
-
+import About from './routes/About'
 
 import {Outlet, Link} from 'react-router-dom'
 
@@ -36,6 +36,7 @@ function App() {
           <Route path="/editArt/:id" element={<EditArt/>}/>
           <Route path="/collections" element={<Collections/>}/>
           <Route path="/collections/:collectionName" element={<ShowCollections/>}/>
+          <Route path="/about" element={<About/>}/>
         </Route>
       </Routes>
     </Router>

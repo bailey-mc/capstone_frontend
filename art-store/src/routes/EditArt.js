@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 function EditArt() {
 
-
+    
     const navigate = useNavigate();
     //pulls info from url
     const parameters = useParams();
@@ -20,15 +20,12 @@ function EditArt() {
         // event.preventDefault();
         console.log(event.target.value + ' value ' + event.target.name + " name");
 
-        // const {name, value, type} = event.target
         setArt({
             ...art,
             [event.target.name]: event.target.value
         })
         console.log(art);
 
-        // setName(event.target.value)
-        // console.log(name);
     }
 
     const handleEditArt = (event) => {
@@ -110,9 +107,10 @@ function EditArt() {
                 >
                     Submit
                 </Button>
+                <Button variant="primary" className="delete" onClick={handleDelete}>Delete</Button>
+
                 </Form>
 
-        <button onClick={handleDelete}>Delete</button>
 
         </div>
     )
