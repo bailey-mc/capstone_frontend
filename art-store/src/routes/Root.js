@@ -8,7 +8,7 @@ function Root() {
     <div className="App">
       <section className='header'>
         <h1>Welcome to Art Gallery</h1>
-        <h3>checkout our pieces</h3>
+        <h3>check out our pieces</h3>
         <ul className="links">
           <li><Link to={'art'} className="custom-link">Featured Art </Link></li>
           <li> | </li>
