@@ -39,7 +39,7 @@ function Collections () {
             return(
                 <div className="collection-card" key={collection.Id}>
                     <h3><Link to={collection.Collection} className="custom-link">{collection.Collection}</Link></h3> <br/>
-                    <img src={collection.Image} width="200px"/>
+                    <img src={collection.Image} width="200px" alt="Bad Art Image"/>
                 </div>
             )
           })}

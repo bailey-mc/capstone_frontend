@@ -60,7 +60,7 @@ function EditArt() {
         
     useEffect(()=> {
         getArt()
-    }, [])
+    }, [art])
 
     return(
         <div className="frame">
