@@ -6,13 +6,13 @@ import axios from 'axios'
 function Art() {
 
   const [art, setArt] = useState([{
-                                  artName: "",
-                                  artist: "",
-                                  price: "",
-                                  year: "",
-                                  image: "",
-                                  collection: "",
-                                  id: ""
+                                  Name: "",
+                                  Artist: "",
+                                  Price: "",
+                                  Year: "",
+                                  Image: "",
+                                  Collection: "",
+                                  Id: ""
                                     }])
 
   const getArt = () => {
@@ -32,9 +32,9 @@ getArt()
     return(
     <div className="App featured">
       <h2>Featured Art</h2><br/>
-      <h4>{art[x].artName} by {art[x].artist}</h4>
-      <img src={art[x].image} /><br/>
-      <h4>Part of our <Link to={`/collections/${art[x].collection}`} className="custom-link" >{art[x].collection} collection</Link></h4>
+      <h4>{art[x].Name} by {art[x].Artist}</h4>
+      <img src={art[x].Image} /><br/>
+      <h4>Part of our <Link to={`/collections/${art[x].Collection}`} className="custom-link" >{art[x].Collection} collection</Link></h4>
       {/* link to collection here */}
       <hr/>
     
@@ -43,8 +43,8 @@ getArt()
         {art.map((artPiece) => {
             return(
                 <div className="one-card">
-                <img className="cards-img" src={artPiece.image}/><br/>
-                <p><Link to={artPiece.id}className="custom-link">{artPiece.artName} </Link></p>
+                <img className="cards-img" src={artPiece.Image}/><br/>
+                <p><Link to={artPiece.Id}className="custom-link">{artPiece.Name} </Link></p>
 
          
               </div>

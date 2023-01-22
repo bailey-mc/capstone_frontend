@@ -8,18 +8,18 @@ function ShowCollections () {
     let {collectionName} = useParams();
 
     const [art, setArt] = useState([{
-        artName: "",
-        artist: "",
-        price: "",
-        year: "",
-        image: "",
-        collection: "",
-        id: ""
+        Name: "",
+        Artist: "",
+        Price: "",
+        Year: "",
+        Image: "",
+        Collection: "",
+        Id: ""
           }])
     
 
 
-    const thisCollection = art.filter(artt => (artt.collection === collectionName));
+    const thisCollection = art.filter(artt => (artt.Collection === collectionName));
     console.log(thisCollection + ' this collection');
 
 
@@ -42,11 +42,11 @@ function ShowCollections () {
             {thisCollection.map((collection)=> {
                 return(
                     <Carousel.Item>
-                        <img className="d-block w-100 carousel-img" src={collection.image} alt={collection.name}/>
+                        <img className="d-block w-100 carousel-img" src={collection.Image} alt={collection.Name}/>
                         <Carousel.Caption>
-                            {collection.artName} by {collection.artist} <br/>
-                            {collection.year} <br/>
-                            ${collection.price}
+                            {collection.Name} by {collection.Artist} <br/>
+                            {collection.Year} <br/>
+                            ${collection.Price}
                         </Carousel.Caption>
                     </Carousel.Item>
                 )

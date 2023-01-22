@@ -8,13 +8,13 @@ function ShowArt() {
     let {artId} = useParams()
 
     const [art, setArt] = useState([{
-        artName: "",
-        artist: "",
-        price: "",
-        year: "",
-        image: "",
-        collection: "",
-        id: ""
+        Name: "",
+        Artist: "",
+        Price: "",
+        Year: "",
+        Image: "",
+        Collection: "",
+        Id: ""
           }])
 
     
@@ -32,14 +32,14 @@ function ShowArt() {
 
     return(
         <div className="show-art">
-            <h2 className="art-title">{art.artName}</h2>
-            <sm>by {art.artist}</sm><br/>
-            <img src={art.image} className="show-art-img"/>
-            <p>Year: {art.year}</p>
-            <p>Part of our {art.collection} collection</p>
-            {/* LINK TO COLLECTION HERE */}
-            <p> Selling for ${art.price}</p>
-            <p><Link to={`../../editArt/${art.id}`} className="custom-link right">Edit?</Link></p>
+            <h2 className="art-title">{art.Name}</h2>
+            <sm>by {art.Artist}</sm><br/>
+            <img src={art.Image} className="show-art-img"/>
+            <p>Year: {art.Year}</p>
+            <p>Part of our {art.Collection} collection</p>
+            {/* LINK TO Collection HERE */}
+            <p> Selling for ${art.Price}</p>
+            <p><Link to={`../../editArt/${art.Id}`} className="custom-link right">Edit?</Link></p>
         </div>
     )
 }

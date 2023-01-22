@@ -19,10 +19,6 @@ function Root() {
           <li><Link to={`about`} className="custom-link">About Us</Link></li>
         </ul>
       </section>
-      
-      {/* link to available art */}
-      {/* link to artists? */}
-      {/* link to sold art */}
       <div> 
          <Outlet/> 
        </div>

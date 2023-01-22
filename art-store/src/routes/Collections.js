@@ -6,17 +6,17 @@ import axios from "axios";
 function Collections () {
 
     const [art, setArt] = useState([{
-        artName: "",
-        artist: "",
-        price: "",
-        year: "",
-        image: "",
-        collection: "",
-        id: ""
+        Name: "",
+        Artist: "",
+        Price: "",
+        Year: "",
+        Image: "",
+        Collection: "",
+        Id: ""
           }])
     
 
-    const uniqueCollections = [...new Map(art.map(item => [item.collection, item])).values()]
+    const uniqueCollections = [...new Map(art.map(item => [item.Collection, item])).values()]
    
     
 
@@ -37,9 +37,9 @@ function Collections () {
 
           {uniqueCollections.map((collection)=> {
             return(
-                <div className="collection-card" key={collection.id}>
-                    <h3><Link to={collection.collection} className="custom-link">{collection.collection}</Link></h3> <br/>
-                    <img src={collection.image} width="200px"/>
+                <div className="collection-card" key={collection.Id}>
+                    <h3><Link to={collection.Collection} className="custom-link">{collection.Collection}</Link></h3> <br/>
+                    <img src={collection.Image} width="200px"/>
                 </div>
             )
           })}

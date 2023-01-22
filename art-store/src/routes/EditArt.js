@@ -29,15 +29,16 @@ function EditArt() {
     }
 
     const handleEditArt = (event) => {
+        event.preventDefault();
         axios
             .put(`http://localhost:5245/api/art/${parameters.id}`,
             {
-                artName: art.artName,
-                artist: art.artist,
-                price: art.price,
-                year: art.year,
-                image: art.image,
-                collection: art.collection
+                Name: art.Name,
+                Artist: art.Artist,
+                Price: art.Price,
+                Year: art.Year,
+                Image: art.Image,
+                Collection: art.Collection
             })
             //WHY DOES IT NOT RELOAD WHEN IT NAVIGATES TO ART SHOW PAGE???
             navigate(`/art/${parameters.id}`)
@@ -71,29 +72,29 @@ function EditArt() {
         >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Art Title</Form.Label>
-                    <Form.Control type="text" name="artName" defaultValue={art.artName} onChange={handleChange} />
+                    <Form.Control type="text" name="Name" defaultValue={art.Name} onChange={handleChange} />
                 </Form.Group>
-                {/* <input type="text" name="artName" defaultValue={art.}Title" max-width="100px" onChange={handleChange}/> */}
+                {/* <input type="text" name="Name" defaultValue={art.}Title" max-width="100px" onChange={handleChange}/> */}
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Artist</Form.Label>
-                    <Form.Control type="text" name="artist" defaultValue={art.artist} onChange={handleChange} />
+                    <Form.Control type="text" name="Artist" defaultValue={art.Artist} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Year</Form.Label>
-                    <Form.Control type="text" name="year" defaultValue={art.year} onChange={handleChange} />
+                    <Form.Control type="text" name="Year" defaultValue={art.Year} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
-                    <Form.Control type="number" name="price" defaultValue={art.price} onChange={handleChange} />
+                    <Form.Control type="number" name="Price" defaultValue={art.Price} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Image</Form.Label>
-                    <Form.Control type="string" name="image" defaultValue={art.image} onChange={handleChange} />
+                    <Form.Control type="string" name="Image" defaultValue={art.Image} onChange={handleChange} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Collection</Form.Label>
-                    <Form.Select type="string" name="collection" placeholder="Collection" max-width="100px" onChange={handleChange}>
+                    <Form.Select type="string" name="Collection" placeholder="Collection" max-width="100px" onChange={handleChange}>
                         <option selected disabled hidden>Select a Collection</option>
                         <option>Awful Animals</option>
                         <option>Poor Traits</option>
