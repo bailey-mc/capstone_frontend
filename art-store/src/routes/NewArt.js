@@ -40,7 +40,7 @@ function NewArt() {
         event.preventDefault();
         event.target.reset();
         axios
-            .post('http://localhost:5245/api/art', {
+            .post('https://dotnetheadache.herokuapp.com/api/art', {
                 Name: newArt.Name,
                 Artist: newArt.Artist,
                 Price: newArt.Price,

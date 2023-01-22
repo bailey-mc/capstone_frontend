@@ -25,7 +25,7 @@ function ShowCollections () {
 
     const getArt = () => {
         axios
-        .get('http://localhost:5245/api/art')
+        .get('https://dotnetheadache.herokuapp.com/api/art')
         .then 
         (response => setArt(response.data))
         

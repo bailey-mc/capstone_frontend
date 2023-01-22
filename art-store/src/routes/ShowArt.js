@@ -20,7 +20,7 @@ function ShowArt() {
     
     const getArt = () => {
         axios
-            .get(`http://localhost:5245/api/art/${artId}`)
+            .get(`https://dotnetheadache.herokuapp.com/api/art/${artId}`)
             .then 
             (response => setArt(response.data))
             
