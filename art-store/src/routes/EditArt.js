@@ -31,7 +31,7 @@ function EditArt() {
     const handleEditArt = (event) => {
         event.preventDefault();
         axios
-            .put(`http://localhost:5245/api/art/${parameters.id}`,
+            .put(`https://dotnetheadache.herokuapp.com/api/art${parameters.id}`,
             {
                 Name: art.Name,
                 Artist: art.Artist,
@@ -46,7 +46,7 @@ function EditArt() {
 
     const handleDelete = () => {
         axios
-            .delete(`http://localhost:5245/api/art/${parameters.id}`)
+            .delete(`https://dotnetheadache.herokuapp.com/api/art${parameters.id}`)
         navigate('/art')
         //THIS ALSO DOES NOT RELOAD PAGE WHEN IT NAVIGATES TO ART
 
@@ -54,7 +54,7 @@ function EditArt() {
     
     const getArt = () => {
         axios
-            .get(`http://localhost:5245/api/art/${parameters.id}`)
+            .get(`https://dotnetheadache.herokuapp.com/api/art${parameters.id}`)
             .then((response) => setArt(response.data))
     }
         
