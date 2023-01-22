@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react'
-import ReactDOM from "react-dom/client";
+import React from 'react'
 import {
 BrowserRouter as Router, Route, Routes
 } from "react-router-dom";
@@ -10,13 +9,11 @@ import ShowArt from './routes/ShowArt';
 import ShowCollections from './routes/ShowCollections'
 import Collections from './routes/Collections'
 import Root from './routes/Root'
-import ErrorPage from './routes/Error-page';
 import Art from './routes/Art'
 import NewArt from './routes/NewArt'
 import EditArt from './routes/EditArt'
 import About from './routes/About'
 
-import {Outlet, Link} from 'react-router-dom'
 
 
 

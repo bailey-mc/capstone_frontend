@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
@@ -15,6 +15,7 @@ function Art() {
                                   Id: ""
                                     }])
 
+
   const getArt = () => {
     axios
       .get('http://localhost:5245/api/art')
@@ -27,13 +28,14 @@ function Art() {
 
 useEffect(()=> {
 getArt()
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
     return(
     <div className="App featured">
       <h2>Featured Art</h2><br/>
       <h4>{art[x].Name} by {art[x].Artist}</h4>
-      <img src={art[x].Image} /><br/>
+      <img src={art[x].Image} alt={art[x].Name}/><br/>
       <h4>Part of our <Link to={`/collections/${art[x].Collection}`} className="custom-link" >{art[x].Collection} collection</Link></h4>
       {/* link to collection here */}
       <hr/>
@@ -43,7 +45,7 @@ getArt()
         {art.map((artPiece) => {
             return(
                 <div className="one-card">
-                <img className="cards-img" src={artPiece.Image}/><br/>
+                <img className="cards-img" src={artPiece.Image} alt={artPiece.Name}/><br/>
                 <p><Link to={artPiece.Id}className="custom-link">{artPiece.Name} </Link></p>
 
          

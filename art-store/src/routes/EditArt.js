@@ -60,6 +60,7 @@ function EditArt() {
         
     useEffect(()=> {
         getArt()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(

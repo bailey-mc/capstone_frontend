@@ -28,13 +28,14 @@ function ShowArt() {
 
     useEffect(()=> {
         getArt()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(
         <div className="show-art">
             <h2 className="art-title">{art.Name}</h2>
             <sm>by {art.Artist}</sm><br/>
-            <img src={art.Image} className="show-art-img"/>
+            <img src={art.Image} className="show-art-img" alt={art.Name}/>
             <p>Year: {art.Year}</p>
             <p>Part of our {art.Collection} collection</p>
             {/* LINK TO Collection HERE */}
