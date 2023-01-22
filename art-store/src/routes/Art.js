@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
@@ -15,6 +15,7 @@ function Art() {
                                   Id: ""
                                     }])
 
+
   const getArt = () => {
     axios
       .get('http://localhost:5245/api/art')
@@ -27,6 +28,7 @@ function Art() {
 
 useEffect(()=> {
 getArt()
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
     return(
