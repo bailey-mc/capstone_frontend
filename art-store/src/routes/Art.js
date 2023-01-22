@@ -27,7 +27,7 @@ function Art() {
 
 useEffect(()=> {
 getArt()
-}, [art])
+}, [])
 
     return(
     <div className="App featured">

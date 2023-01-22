@@ -28,7 +28,7 @@ function ShowArt() {
 
     useEffect(()=> {
         getArt()
-    }, [art])
+    }, [])
 
     return(
         <div className="show-art">
