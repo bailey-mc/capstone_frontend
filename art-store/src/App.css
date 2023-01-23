@@ -102,15 +102,14 @@ body {
   justify-content: space-evenly;
   margin: 0 auto;
   width: 70%;
+  background-color: rgba(169, 171, 174, 0.5);
 }
 
 .collection-card {
   margin: 0 3rem 3rem 3rem;
   text-decoration: underline;
 }
-.collection-link {
-  background-color: rgba(169, 171, 174, 0.5);
-}
+
 
 
 /*-------------END COLLECTIONS------------- */
