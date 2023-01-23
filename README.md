@@ -20,16 +20,6 @@ I'd like to incorporate user auth for admins, so that only admins may edit or de
 - Axios
 - React Bootstrap
 
-## Installation Instructions
-- clone capstone_frontend repo onto your local machine
-    - cd into art-store
-    - $ npm i
-    - If you'd like to view it on your local machine, navigate to http://localhost:3000/art
-    
-
-- clone capstone_backend repo onto your local machine
-    -cd into ArtStoreApi
-    - dotnet build
-    - dotnet run
-    - If you'd like to view it on your local machine, navigate to http://localhost:5245/api/art
+## Live Ste
+https://dotnetheadache.netlify.app/
 
