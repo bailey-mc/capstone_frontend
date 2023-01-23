@@ -54,7 +54,7 @@ function EditArt() {
     
     const getArt = () => {
         axios
-            .get(`https://dotnetheadache.herokuapp.com/api/art${parameters.Id}`)
+            .get(`https://dotnetheadache.herokuapp.com/api/art/${parameters.Id}`)
             .then((response) => setArt(response.data))
     }
         
