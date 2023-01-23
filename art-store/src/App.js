@@ -13,8 +13,7 @@ import Art from './routes/Art'
 import NewArt from './routes/NewArt'
 import EditArt from './routes/EditArt'
 import About from './routes/About'
-
-
+import ErrorPage from './routes/Error-page';
 
 
 function App() {
@@ -35,6 +34,7 @@ function App() {
           <Route path="/collections/:collectionName" element={<ShowCollections/>}/>
           <Route path="/about" element={<About/>}/>
         </Route>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </Router>
     </>
