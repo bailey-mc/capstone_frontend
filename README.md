@@ -1,5 +1,5 @@
 # 'Art Gallery' (capstone frontend)
- Art gallery is a React app built with React Router, meant to be used in conjunction with a .NET web api backend (my repo capston_backend holds this web api). It is a CRUD app based on the popular website, Museum of Bad Art. Here, you can submit the worst art you come across and sort it into such categories as Awful Animals or Poor Traits.
+ Art gallery is a React app built with React Router, meant to be used in conjunction with a .NET web api backend (my repo capstone_backend https://github.com/bailey-mc/capstone_backend holds this web api). It is a CRUD app based on the popular website, Museum of Bad Art. Here, you can submit the worst art you come across and sort it into such categories as Awful Animals or Poor Traits.
 
 ## Continuing Goals
 I'd like to incorporate user auth for admins, so that only admins may edit or delete art postings
@@ -20,16 +20,7 @@ I'd like to incorporate user auth for admins, so that only admins may edit or de
 - Axios
 - React Bootstrap
 
-## Installation Instructions
-- clone capstone_frontend repo onto your local machine
-    - cd into art-store
-    - $ npm i
-    - If you'd like to view it on your local machine, navigate to http://localhost:3000/art
-    
-
-- clone capstone_backend repo onto your local machine
-    -cd into ArtStoreApi
-    - dotnet build
-    - dotnet run
-    - If you'd like to view it on your local machine, navigate to http://localhost:5245/api/art
+## Live Ste
+ https://dotnetheadache.netlify.app/
+- Backend: https://dotnetheadache.herokuapp.com/api/art
 
