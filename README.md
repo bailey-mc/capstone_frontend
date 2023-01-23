@@ -1,5 +1,5 @@
 # 'Art Gallery' (capstone frontend)
- Art gallery is a React app built with React Router, meant to be used in conjunction with a .NET web api backend (my repo capstone_backend holds this web api). It is a CRUD app based on the popular website, Museum of Bad Art. Here, you can submit the worst art you come across and sort it into such categories as Awful Animals or Poor Traits.
+ Art gallery is a React app built with React Router, meant to be used in conjunction with a .NET web api backend (my repo capstone_backend https://github.com/bailey-mc/capstone_backend holds this web api). It is a CRUD app based on the popular website, Museum of Bad Art. Here, you can submit the worst art you come across and sort it into such categories as Awful Animals or Poor Traits.
 
 ## Continuing Goals
 I'd like to incorporate user auth for admins, so that only admins may edit or delete art postings
