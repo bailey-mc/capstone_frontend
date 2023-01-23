@@ -39,6 +39,8 @@ body {
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+  background-color: rgba(169, 171, 174, 0.5);
+
 
 }
 .cards {
@@ -54,6 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
+  background-color: rgba(169, 171, 174, 0.5);
+
 }
 
 .cards-img {
@@ -104,6 +108,8 @@ body {
 .collection-card {
   margin: 0 3rem 3rem 3rem;
   text-decoration: underline;
+  background-color: rgba(169, 171, 174, 0.5);
+
 }
 
 
