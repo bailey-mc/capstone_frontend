@@ -167,3 +167,11 @@ body {
   text-align: left;
 }
 /* --------------END ABOUT US ---------- */
+/* ----------------ERROR PAGE-------------- */
+
+/* -------------END ERROR PAGE-------------- */
+#error-page {
+  margin: 2rem auto;
+  width: 70%;
+  background-color: rgba(169, 171, 174, 0.396);
+}
