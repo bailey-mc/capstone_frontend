@@ -21,6 +21,6 @@ I'd like to incorporate user auth for admins, so that only admins may edit or de
 - React Bootstrap
 
 ## Live Ste
-https://dotnetheadache.netlify.app/
-Backend: https://dotnetheadache.herokuapp.com/api/art
+ https://dotnetheadache.netlify.app/
+- Backend: https://dotnetheadache.herokuapp.com/api/art
 
