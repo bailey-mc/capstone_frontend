@@ -56,7 +56,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
-  background-color: rgba(169, 171, 174, 0.5);
 
 }
 
@@ -100,7 +99,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
   width: 70%;
 }
@@ -108,10 +107,10 @@ body {
 .collection-card {
   margin: 0 3rem 3rem 3rem;
   text-decoration: underline;
-  background-color: rgba(169, 171, 174, 0.5);
-
 }
-
+.collection-link {
+  background-color: rgba(169, 171, 174, 0.5);
+}
 
 
 /*-------------END COLLECTIONS------------- */
